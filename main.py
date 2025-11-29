@@ -1,6 +1,10 @@
 from fastapi import FastAPI
 from routes import study, movie, auth
 from fastapi.staticfiles import StaticFiles
+import os
+
+UPLOAD_DIR = "uploads"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI()
 
