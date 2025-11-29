@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Добавить фильм</title>
+</head>
+
+<body>
+	<h1>Добавить новый фильм</h1>
+	<form action="/movie" method="post" enctype="multipart/form-data">
+		<input type="text" name="title" placeholder="Название фильма" required />
+		<input type="text" name="description" placeholder="Описание фильма" required />
+		<input type="number" name="release_year" placeholder="Год выпуска" required />
+		<label>
+			<input type="checkbox" name="is_available" value="true" /> Доступен
+		</label>
+		<input type="file" name="description_file" accept=".txt,.pdf" />
+		<input type="file" name="cover_image" accept="image/*" />
+		<button type="submit">Добавить фильм</button>
+	</form>
+</body>
+
+</html>
